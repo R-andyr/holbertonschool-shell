@@ -10,6 +10,8 @@ echo "Best School"
 	elif [ $x -eq 8 ]
 	then
 		echo "good luck"
+	else
+		:
 	fi
 	x=$(( x + 1 ))
 done
