@@ -8,7 +8,7 @@ hour=0
 while [ $hour -lt 13 ]; do
 		echo "hour: $hour"
 		seconds=1
-		while [  $seconds -lt 59 ]; do
+		while [  $seconds -lt 60 ]; do
 
                         echo $seconds
 
