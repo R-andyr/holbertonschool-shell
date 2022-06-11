@@ -5,11 +5,10 @@
 # -display minutes from 1 to 59
 hour=0
 
-seconds=1
-
-while true [ $hour -le 12 ]; do
+while [ $hour -lt 12 ]; do
 		echo "hour: $hour"
-		while [  $seconds -le 59 ]; do
+		seconds=1
+		while [  $seconds -lt 59 ]; do
 
                         echo $seconds
 
