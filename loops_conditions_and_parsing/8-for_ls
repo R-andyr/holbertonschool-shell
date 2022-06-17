@@ -4,7 +4,10 @@
 # The content of the current directory
 # In a list format
 # Where only the part of the name after the first dash is displayed.
-for _ in /dir*
+for filename in *
 do
-	 cut -c 2- "$PWD"
+  if [ "$filename" != "." ] && [ "$filename" != ".." ]
+  then
+    echo "${filename:1}"
+  fi
 done
