@@ -4,10 +4,10 @@
 # The content of the current directory
 # In a list format
 # Where only the part of the name after the first dash is displayed.
-for filename in *
+for filename in *;
 do
-  if [ "$filename" != "." ] && [ "$filename" != ".." ]
+  if [[ "$filename" != ".*" ]];
   then
-    echo "${filename:1}"
+    echo "${filename/-*/}"
   fi
 done
